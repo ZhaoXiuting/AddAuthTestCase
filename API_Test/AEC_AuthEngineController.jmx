@@ -5557,7 +5557,7 @@
           <hashTree/>
         </hashTree>
       </hashTree>
-      <ThreadGroup guiclass="ThreadGroupGui" testclass="ThreadGroup" testname="AEC_10_N_Judge" enabled="false">
+      <ThreadGroup guiclass="ThreadGroupGui" testclass="ThreadGroup" testname="AEC_10_N_Judge" enabled="true">
         <stringProp name="TestPlan.comments">无效的判断某个class能否进行某个授权动作(新用户的token但是没有给予规则管理)</stringProp>
         <stringProp name="ThreadGroup.on_sample_error">continue</stringProp>
         <elementProp name="ThreadGroup.main_controller" elementType="LoopController" guiclass="LoopControlPanel" testclass="LoopController" testname="循环控制器" enabled="true">
@@ -6295,7 +6295,7 @@
           <hashTree/>
         </hashTree>
       </hashTree>
-      <ThreadGroup guiclass="ThreadGroupGui" testclass="ThreadGroup" testname="AEC_11_Y_Judge" enabled="false">
+      <ThreadGroup guiclass="ThreadGroupGui" testclass="ThreadGroup" testname="AEC_11_Y_Judge" enabled="true">
         <stringProp name="ThreadGroup.on_sample_error">continue</stringProp>
         <elementProp name="ThreadGroup.main_controller" elementType="LoopController" guiclass="LoopControlPanel" testclass="LoopController" testname="循环控制器" enabled="true">
           <boolProp name="LoopController.continue_forever">false</boolProp>
@@ -12145,7 +12145,7 @@
         <stringProp name="ThreadGroup.duration"></stringProp>
         <stringProp name="ThreadGroup.delay"></stringProp>
         <boolProp name="ThreadGroup.same_user_on_next_iteration">true</boolProp>
-        <stringProp name="TestPlan.comments">isArray值置为空</stringProp>
+        <stringProp name="TestPlan.comments">isArray值置为空，结果不以数组的形式返回</stringProp>
       </ThreadGroup>
       <hashTree>
         <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="AEC_06_S05_check-classes" enabled="true">
@@ -12181,7 +12181,7 @@
               <stringProp name="2054496079">isArray</stringProp>
             </collectionProp>
             <collectionProp name="UserParameters.thread_values">
-              <collectionProp name="2021716465">
+              <collectionProp name="2021741514">
                 <stringProp name="1339710923">SaveModules,EditModules,DeleteModules</stringProp>
                 <stringProp name="0"></stringProp>
               </collectionProp>
@@ -12221,7 +12221,7 @@
           <hashTree/>
         </hashTree>
       </hashTree>
-      <ThreadGroup guiclass="ThreadGroupGui" testclass="ThreadGroup" testname="AEC_02_JudgePcAppAuth" enabled="true">
+      <ThreadGroup guiclass="ThreadGroupGui" testclass="ThreadGroup" testname="AEC_02_Y_JudgePcAppAuth" enabled="true">
         <stringProp name="ThreadGroup.on_sample_error">continue</stringProp>
         <elementProp name="ThreadGroup.main_controller" elementType="LoopController" guiclass="LoopControlPanel" testclass="LoopController" testname="循环控制器" enabled="true">
           <boolProp name="LoopController.continue_forever">false</boolProp>
@@ -12364,10 +12364,12 @@
           <UserParameters guiclass="UserParametersGui" testclass="UserParameters" testname="用户参数" enabled="true">
             <collectionProp name="UserParameters.names">
               <stringProp name="2054496079">isArray</stringProp>
+              <stringProp name="1444631168">authNames</stringProp>
             </collectionProp>
             <collectionProp name="UserParameters.thread_values">
-              <collectionProp name="1902774694">
+              <collectionProp name="1969731306">
                 <stringProp name="3569038">true</stringProp>
+                <stringProp name="1339710923">SaveModules,EditModules,DeleteModules</stringProp>
               </collectionProp>
             </collectionProp>
             <boolProp name="UserParameters.per_iteration">false</boolProp>

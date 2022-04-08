@@ -12163,7 +12163,7 @@
           <stringProp name="HTTPSampler.port"></stringProp>
           <stringProp name="HTTPSampler.protocol"></stringProp>
           <stringProp name="HTTPSampler.contentEncoding"></stringProp>
-          <stringProp name="HTTPSampler.path">/dwf/v1/auth/check-classes?authName=${authNames}</stringProp>
+          <stringProp name="HTTPSampler.path">/dwf/v1/auth/check-classes?authName=${authNames}&amp;isArray=${isArray}</stringProp>
           <stringProp name="HTTPSampler.method">POST</stringProp>
           <boolProp name="HTTPSampler.follow_redirects">true</boolProp>
           <boolProp name="HTTPSampler.auto_redirects">false</boolProp>
@@ -12178,10 +12178,12 @@
           <UserParameters guiclass="UserParametersGui" testclass="UserParameters" testname="用户参数" enabled="true">
             <collectionProp name="UserParameters.names">
               <stringProp name="1444631168">authNames</stringProp>
+              <stringProp name="2054496079">isArray</stringProp>
             </collectionProp>
             <collectionProp name="UserParameters.thread_values">
-              <collectionProp name="-1181709329">
+              <collectionProp name="2021716465">
                 <stringProp name="1339710923">SaveModules,EditModules,DeleteModules</stringProp>
+                <stringProp name="0"></stringProp>
               </collectionProp>
             </collectionProp>
             <boolProp name="UserParameters.per_iteration">false</boolProp>
